@@ -67,6 +67,11 @@ a {
       top: 45%;
       left: 50%;
       transform: translate(-50%, -45%); }
+      .background .container .title img {
+        display: block;
+        width: calc(100%/3);
+        margin: 0 auto;
+        min-width: 250px; }
     .background .container .social {
       position: absolute;
       top: 70%;
@@ -78,11 +83,11 @@ a {
         font-size: 40px; }
         @media all and (min-width: 768px) {
           .background .container .social a {
-            font-size: 75px; } }
+            font-size: 55px; } }
     .background .container .copyright {
       display: block;
       position: absolute;
-      bottom: 25px;
+      bottom: 0;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -90,10 +95,7 @@ a {
       letter-spacing: 4px; }
       .background .container .copyright p {
         text-transform: uppercase;
-        font-size: 11px; }
+        font-size: 8px; }
         @media all and (min-width: 768px) {
           .background .container .copyright p {
-            font-size: 16px; } }
-      @media all and (min-width: 768px) {
-        .background .container .copyright {
-          bottom: 50px; } }
+            font-size: 10px; } }

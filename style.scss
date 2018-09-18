@@ -84,6 +84,13 @@ a {
 	      top: 45%;
 	      left: 50%;
 	      transform: translate(-50%, -45%);
+	      
+	      img {
+		    	display: block;
+				width: calc(100%/3);
+				margin: 0 auto;
+				min-width: 250px;
+	      	}
 	    }
     
 	    .social {
@@ -98,7 +105,7 @@ a {
 				font-size: 40px;
 				
 				@media all and (min-width: 768px) {
-		    		font-size: 75px;
+		    		font-size: 55px;
 	    		}
 			}
 	    }
@@ -106,7 +113,7 @@ a {
 	    .copyright {
 		    display: block;
 	    	position: absolute;
-			bottom: 25px;
+			bottom: 0;
 			left: 0;
 			right: 0;
 			margin: 0 auto;
@@ -115,15 +122,15 @@ a {
 			
 			p {
 				text-transform: uppercase;
-				font-size: 11px;
+				font-size: 8px;
 				
 				@media all and (min-width: 768px) {
-		    		font-size: 16px;
+		    		font-size: 10px;
 	    		}
 			}
 	      
 			@media all and (min-width: 768px) {
-		    	bottom: 50px;
+		    	//bottom: 50px;
 	    	}
 	    }
 	}
