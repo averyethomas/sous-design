@@ -43,6 +43,8 @@ a {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	background: no-repeat 50% 50%;
+	background-size: cover;
 	
 	.background-image {
 		width: 100%;
@@ -53,7 +55,7 @@ a {
 		top: 0;
 		left: 0;
 		opacity:0;
-		z-index: -1;
+		z-index: 1;
 		transition: opacity 0.35s ease-in-out;
 		
 		&.active {
@@ -68,6 +70,7 @@ a {
 		height: 100%;
 		width: 100%;
 		position: relative;
+		z-index: 5;
     
 	    @media all and (min-width: 768px) {
 		    padding: 50px;
@@ -113,7 +116,7 @@ a {
 	    .copyright {
 		    display: block;
 	    	position: absolute;
-			bottom: 0;
+			bottom: 10px;
 			left: 0;
 			right: 0;
 			margin: 0 auto;
@@ -123,10 +126,6 @@ a {
 			p {
 				text-transform: uppercase;
 				font-size: 8px;
-				
-				@media all and (min-width: 768px) {
-		    		font-size: 10px;
-	    		}
 			}
 	      
 			@media all and (min-width: 768px) {
